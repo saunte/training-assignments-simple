@@ -10,40 +10,18 @@ public class FlagFactory {
     public List<Color> getFlagColors(Nationality nationality) {
         List<Color> result;
         switch (nationality) {
-        case DUTCH:
-            result = Arrays.asList(Color.RED, Color.WHITE, Color.BLUE);
-            break;
-        case GERMAN:
-            result = Arrays.asList(Color.BLACK, Color.RED, Color.YELLOW);
-            break;
-        case BELGIAN:
-            result = Arrays.asList(Color.BLACK, Color.YELLOW, Color.RED);
-            break;
-        case FRENCH:
-            result = Arrays.asList(Color.BLUE, Color.WHITE, Color.RED);
-            break;
-        case ITALIAN:
-            result = Arrays.asList(Color.GREEN, Color.WHITE, Color.RED);
-            break;
-        case ROMANIA:
-            result = Arrays.asList(Color.BLUE, Color.YELLOW, Color.RED);
-            break;
-        case IRELAND:
-            result = Arrays.asList(Color.GREEN, Color.WHITE, Color.ORANGE);
-            break;
-        case HUNGARIAN:
-            result = Arrays.asList(Color.RED, Color.WHITE, Color.GREEN);
-            break;
-        case BULGARIAN:
-            result = Arrays.asList(Color.WHITE, Color.GREEN, Color.RED);
-            break;
-        case RUSSIA:
-            result = Arrays.asList(Color.WHITE, Color.BLUE, Color.RED);
-            break;
-        case UNCLASSIFIED:
-        default:
-            result = Arrays.asList(Color.GRAY);
-            break;
+            case DUTCH:    return Arrays.asList(Color.RED, Color.WHITE, Color.BLUE);
+            case GERMAN:   return Arrays.asList(Color.BLACK, Color.RED, Color.YELLOW);
+            case BELGIAN:  return Arrays.asList(Color.BLACK, Color.YELLOW, Color.RED);
+            case FRENCH:   return Arrays.asList(Color.BLUE, Color.WHITE, Color.RED);
+            case ITALIAN:  return Arrays.asList(Color.GREEN, Color.WHITE, Color.RED);
+            case ROMANIA:  return Arrays.asList(Color.BLUE, Color.YELLOW, Color.RED);
+            case IRELAND:  return Arrays.asList(Color.GREEN, Color.WHITE, Color.ORANGE);
+            case HUNGARIAN:return Arrays.asList(Color.RED, Color.WHITE, Color.GREEN);
+            case BULGARIAN:return Arrays.asList(Color.WHITE, Color.GREEN, Color.RED);
+            case RUSSIA:   return Arrays.asList(Color.WHITE, Color.BLUE, Color.RED);
+            case UNCLASSIFIED:
+            default:       return Arrays.asList(Color.GRAY);
         }
         return result;
     }
